@@ -12,6 +12,8 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AssistantRouteImport } from './routes/assistant'
 import { Route as AuthRouteImport } from './routes/auth'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as DoctorRouteImport } from './routes/doctor'
 import { Route as DoctorsRouteImport } from './routes/doctors'
 import { Route as SymptomsRouteImport } from './routes/symptoms'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
@@ -29,6 +31,16 @@ const AssistantRoute = AssistantRouteImport.update({
 const AuthRoute = AuthRouteImport.update({
   id: '/auth',
   path: '/auth',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DoctorRoute = DoctorRouteImport.update({
+  id: '/doctor',
+  path: '/doctor',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DoctorsRoute = DoctorsRouteImport.update({
@@ -51,6 +63,8 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/assistant': typeof AssistantRoute
   '/auth': typeof AuthRoute
+  '/dashboard': typeof DashboardRoute
+  '/doctor': typeof DoctorRoute
   '/doctors': typeof DoctorsRoute
   '/symptoms': typeof SymptomsRoute
   '/api/chat': typeof ApiChatRoute
@@ -59,6 +73,8 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/assistant': typeof AssistantRoute
   '/auth': typeof AuthRoute
+  '/dashboard': typeof DashboardRoute
+  '/doctor': typeof DoctorRoute
   '/doctors': typeof DoctorsRoute
   '/symptoms': typeof SymptomsRoute
   '/api/chat': typeof ApiChatRoute
@@ -68,6 +84,8 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/assistant': typeof AssistantRoute
   '/auth': typeof AuthRoute
+  '/dashboard': typeof DashboardRoute
+  '/doctor': typeof DoctorRoute
   '/doctors': typeof DoctorsRoute
   '/symptoms': typeof SymptomsRoute
   '/api/chat': typeof ApiChatRoute
@@ -75,14 +93,31 @@ export interface FileRoutesById {
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
-    '/' | '/assistant' | '/auth' | '/doctors' | '/symptoms' | '/api/chat'
+    | '/'
+    | '/assistant'
+    | '/auth'
+    | '/dashboard'
+    | '/doctor'
+    | '/doctors'
+    | '/symptoms'
+    | '/api/chat'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/assistant' | '/auth' | '/doctors' | '/symptoms' | '/api/chat'
+  to:
+    | '/'
+    | '/assistant'
+    | '/auth'
+    | '/dashboard'
+    | '/doctor'
+    | '/doctors'
+    | '/symptoms'
+    | '/api/chat'
   id:
     | '__root__'
     | '/'
     | '/assistant'
     | '/auth'
+    | '/dashboard'
+    | '/doctor'
     | '/doctors'
     | '/symptoms'
     | '/api/chat'
@@ -92,6 +127,8 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AssistantRoute: typeof AssistantRoute
   AuthRoute: typeof AuthRoute
+  DashboardRoute: typeof DashboardRoute
+  DoctorRoute: typeof DoctorRoute
   DoctorsRoute: typeof DoctorsRoute
   SymptomsRoute: typeof SymptomsRoute
   ApiChatRoute: typeof ApiChatRoute
@@ -118,6 +155,20 @@ declare module '@tanstack/react-router' {
       path: '/auth'
       fullPath: '/auth'
       preLoaderRoute: typeof AuthRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/doctor': {
+      id: '/doctor'
+      path: '/doctor'
+      fullPath: '/doctor'
+      preLoaderRoute: typeof DoctorRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/doctors': {
@@ -148,6 +199,8 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AssistantRoute: AssistantRoute,
   AuthRoute: AuthRoute,
+  DashboardRoute: DashboardRoute,
+  DoctorRoute: DoctorRoute,
   DoctorsRoute: DoctorsRoute,
   SymptomsRoute: SymptomsRoute,
   ApiChatRoute: ApiChatRoute,
