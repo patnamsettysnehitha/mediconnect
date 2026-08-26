@@ -185,7 +185,7 @@ const en: Dict = {
 };
 
 const hi: Dict = {
-  "brand.name": "आरोग्य केयर अस्पताल",
+  "brand.name": "MediConnect",
   "brand.tagline": "ऐसी देखभाल जो आपको समझे",
 
   "nav.home": "होम",
@@ -359,7 +359,7 @@ const hi: Dict = {
 };
 
 const te: Dict = {
-  "brand.name": "ఆరోగ్య కేర్ ఆసుపత్రి",
+  "brand.name": "MediConnect",
   "brand.tagline": "మిమ్మల్ని అర్థం చేసుకునే సంరక్షణ",
 
   "nav.home": "హోమ్",
