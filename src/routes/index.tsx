@@ -22,13 +22,13 @@ import medicineImage from "@/assets/medicines.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Aarogya Care Hospital — Doctors, Records & Reminders" },
+      { title: "MediConnect — Doctors, Records & Reminders" },
       {
         name: "description",
         content:
           "Describe your symptoms, find the right specialist, book an appointment, store reports and never miss a medicine. Available in English, Hindi and Telugu.",
       },
-      { property: "og:title", content: "Aarogya Care Hospital — Doctors, Records & Reminders" },
+      { property: "og:title", content: "MediConnect — Doctors, Records & Reminders" },
       {
         property: "og:description",
         content:

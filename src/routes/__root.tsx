@@ -80,14 +80,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Aarogya Care Hospital" },
+      { title: "MediConnect" },
       {
         name: "description",
         content:
           "Book doctor appointments, get symptom guidance, store medical records and set medicine reminders — in English, Hindi and Telugu.",
       },
-      { name: "author", content: "Aarogya Care Hospital" },
-      { property: "og:title", content: "Aarogya Care Hospital" },
+      { name: "author", content: "MediConnect" },
+      { property: "og:title", content: "MediConnect" },
       {
         property: "og:description",
         content: "Appointments, records, medicine reminders and an AI health assistant in three languages.",

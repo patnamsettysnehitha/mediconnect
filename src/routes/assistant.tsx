@@ -12,7 +12,7 @@ import { speak, speechSupported, startListening } from "@/lib/speech";
 export const Route = createFileRoute("/assistant")({
   head: () => ({
     meta: [
-      { title: "AI Health Assistant with Voice Search — Aarogya Care" },
+      { title: "AI Health Assistant with Voice Search — MediConnect" },
       {
         name: "description",
         content:
@@ -81,9 +81,9 @@ function AssistantPage() {
         body: JSON.stringify({ mode: "chat", messages: next, lang }),
       });
       if (res.status === 429) {
-        toast.error("Too many requests. Please try again in a minute.");
+        toast.error(t("err.ratelimit"));
       } else if (res.status === 402) {
-        toast.error("AI usage limit reached. Please add credits to continue.");
+        toast.error(t("err.credits"));
       } else if (!res.ok) {
         toast.error(t("common.error"));
       } else {

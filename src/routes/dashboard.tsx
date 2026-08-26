@@ -27,7 +27,7 @@ export const Route = createFileRoute("/dashboard")({
         content:
           "See upcoming appointments, upload prescriptions and reports, and track your daily medicine schedule in one place.",
       },
-      { property: "og:title", content: "My Health Dashboard — Aarogya Care" },
+      { property: "og:title", content: "My Health Dashboard — MediConnect" },
       { property: "og:description", content: "Appointments, medical records and medicine reminders for patients." },
     ],
   }),
@@ -226,7 +226,7 @@ function RecordsTab({ userId }: { userId: string }) {
     if (file) {
       if (file.size > 10 * 1024 * 1024) {
         setBusy(false);
-        toast.error("Max file size is 10 MB.");
+        toast.error(t("err.maxfile"));
         return;
       }
       const ext = file.name.split(".").pop() ?? "bin";
