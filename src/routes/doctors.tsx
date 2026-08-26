@@ -24,13 +24,13 @@ export const Route = createFileRoute("/doctors")({
   validateSearch: searchSchema,
   head: () => ({
     meta: [
-      { title: "Find a Doctor & Book an Appointment — Aarogya Care" },
+      { title: "Find a Doctor & Book an Appointment — MediConnect" },
       {
         name: "description",
         content:
           "Browse specialists by department, compare experience and fees, and book an available appointment slot in seconds.",
       },
-      { property: "og:title", content: "Find a Doctor & Book an Appointment — Aarogya Care" },
+      { property: "og:title", content: "Find a Doctor & Book an Appointment — MediConnect" },
       { property: "og:description", content: "Cardiology, paediatrics, orthopaedics and more. Book a free slot today." },
     ],
   }),

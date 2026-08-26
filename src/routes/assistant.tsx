@@ -12,7 +12,7 @@ import { speak, speechSupported, startListening } from "@/lib/speech";
 export const Route = createFileRoute("/assistant")({
   head: () => ({
     meta: [
-      { title: "AI Health Assistant with Voice Search — Aarogya Care" },
+      { title: "AI Health Assistant with Voice Search — MediConnect" },
       {
         name: "description",
         content:

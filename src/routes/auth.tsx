@@ -17,13 +17,13 @@ import { SPECIALTIES } from "@/lib/triage";
 export const Route = createFileRoute("/auth")({
   head: () => ({
     meta: [
-      { title: "Login or Sign up — Aarogya Care Hospital" },
+      { title: "Login or Sign up — MediConnect" },
       {
         name: "description",
         content: "Patient and doctor accounts for booking appointments, medical records and medicine reminders.",
       },
-      { property: "og:title", content: "Login or Sign up — Aarogya Care Hospital" },
-      { property: "og:description", content: "Separate patient and doctor logins for Aarogya Care Hospital." },
+      { property: "og:title", content: "Login or Sign up — MediConnect" },
+      { property: "og:description", content: "Separate patient and doctor logins for MediConnect." },
     ],
   }),
   component: AuthPage,

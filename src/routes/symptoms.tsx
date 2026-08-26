@@ -14,7 +14,7 @@ import { isEmergency, matchSpecialty, specialtyLabel } from "@/lib/triage";
 export const Route = createFileRoute("/symptoms")({
   head: () => ({
     meta: [
-      { title: "Symptom Guidance — Which Doctor Should I See? | Aarogya Care" },
+      { title: "Symptom Guidance — Which Doctor Should I See? | MediConnect" },
       {
         name: "description",
         content:

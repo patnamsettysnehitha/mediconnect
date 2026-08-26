@@ -11,7 +11,7 @@ export const LANGUAGES: { code: Lang; label: string; native: string }[] = [
 type Dict = Record<string, string>;
 
 const en: Dict = {
-  "brand.name": "Aarogya Care Hospital",
+  "brand.name": "MediConnect",
   "brand.tagline": "Care that understands you",
 
   "nav.home": "Home",
@@ -61,7 +61,7 @@ const en: Dict = {
   "home.disclaimer":
     "This website gives general health information only. It is not a diagnosis and it does not replace a qualified doctor.",
 
-  "auth.title": "Welcome to Aarogya Care",
+  "auth.title": "Welcome to MediConnect",
   "auth.sub": "Login or create an account to continue",
   "auth.login": "Login",
   "auth.signup": "Create account",

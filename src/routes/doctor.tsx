@@ -19,13 +19,13 @@ import { specialtyLabel } from "@/lib/triage";
 export const Route = createFileRoute("/doctor")({
   head: () => ({
     meta: [
-      { title: "Doctor Desk — Appointments & Patient History | Aarogya Care" },
+      { title: "Doctor Desk — Appointments & Patient History | MediConnect" },
       {
         name: "description",
         content:
           "Doctors can review today's schedule, upcoming appointments, patient details, visit history and add consultation notes.",
       },
-      { property: "og:title", content: "Doctor Desk — Aarogya Care" },
+      { property: "og:title", content: "Doctor Desk — MediConnect" },
       { property: "og:description", content: "Schedule, patient information and visit history for hospital doctors." },
     ],
   }),

@@ -27,7 +27,7 @@ export const Route = createFileRoute("/dashboard")({
         content:
           "See upcoming appointments, upload prescriptions and reports, and track your daily medicine schedule in one place.",
       },
-      { property: "og:title", content: "My Health Dashboard — Aarogya Care" },
+      { property: "og:title", content: "My Health Dashboard — MediConnect" },
       { property: "og:description", content: "Appointments, medical records and medicine reminders for patients." },
     ],
   }),

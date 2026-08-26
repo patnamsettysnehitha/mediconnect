@@ -9,7 +9,7 @@ const LANG_NAME: Record<string, string> = {
   te: "simple Telugu (Telugu script)",
 };
 
-const CHAT_SYSTEM = (langName: string) => `You are the health information assistant of Aarogya Care Hospital in India.
+const CHAT_SYSTEM = (langName: string) => `You are the health information assistant of MediConnect in India.
 Answer ONLY in ${langName}. Use short sentences and everyday words that someone with little formal education can understand. Avoid medical jargon; if you must use a medical term, explain it in brackets.
 
 Rules:
