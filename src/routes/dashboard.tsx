@@ -226,7 +226,7 @@ function RecordsTab({ userId }: { userId: string }) {
     if (file) {
       if (file.size > 10 * 1024 * 1024) {
         setBusy(false);
-        toast.error("Max file size is 10 MB.");
+        toast.error(t("err.maxfile"));
         return;
       }
       const ext = file.name.split(".").pop() ?? "bin";

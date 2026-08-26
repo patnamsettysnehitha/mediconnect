@@ -315,7 +315,7 @@ function DoctorProfileForm({ doctor, onSaved }: { doctor: DoctorRow; onSaved: ()
           <Input value={form.specialization} onChange={(e) => setForm({ ...form, specialization: e.target.value })} />
         </div>
         <div className="space-y-2">
-          <Label>Qualification</Label>
+          <Label>{t("common.qualification")}</Label>
           <Input value={form.qualification} onChange={(e) => setForm({ ...form, qualification: e.target.value })} />
         </div>
         <div className="space-y-2">
