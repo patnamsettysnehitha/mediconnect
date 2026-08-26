@@ -182,6 +182,10 @@ const en: Dict = {
   "common.status.booked": "Booked",
   "common.status.completed": "Completed",
   "common.status.cancelled": "Cancelled",
+  "common.qualification": "Qualification",
+  "err.maxfile": "Maximum file size is 10 MB.",
+  "err.ratelimit": "Too many requests. Please try again in a minute.",
+  "err.credits": "AI usage limit reached. Please add credits to continue.",
 };
 
 const hi: Dict = {
@@ -356,6 +360,10 @@ const hi: Dict = {
   "common.status.booked": "बुक",
   "common.status.completed": "पूरा",
   "common.status.cancelled": "रद्द",
+  "common.qualification": "योग्यता",
+  "err.maxfile": "फ़ाइल का अधिकतम आकार 10 एमबी है।",
+  "err.ratelimit": "बहुत अधिक अनुरोध। कृपया एक मिनट बाद फिर कोशिश करें।",
+  "err.credits": "एआई उपयोग सीमा समाप्त। जारी रखने के लिए क्रेडिट जोड़ें।",
 };
 
 const te: Dict = {
@@ -530,6 +538,10 @@ const te: Dict = {
   "common.status.booked": "బుక్ అయింది",
   "common.status.completed": "పూర్తయింది",
   "common.status.cancelled": "రద్దు",
+  "common.qualification": "అర్హత",
+  "err.maxfile": "గరిష్ట ఫైల్ పరిమాణం 10 ఎంబీ.",
+  "err.ratelimit": "చాలా ఎక్కువ అభ్యర్థనలు. ఒక నిమిషం తర్వాత మళ్లీ ప్రయత్నించండి.",
+  "err.credits": "AI వినియోగ పరిమితి ముగిసింది. కొనసాగించడానికి క్రెడిట్‌లు జోడించండి.",
 };
 
 const DICTS: Record<Lang, Dict> = { en, hi, te };
